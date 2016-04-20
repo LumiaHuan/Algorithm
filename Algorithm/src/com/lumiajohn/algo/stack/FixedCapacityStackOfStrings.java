@@ -19,7 +19,10 @@ public class FixedCapacityStackOfStrings {
 		stackContent[++N] = item;
 	}
 	public String pop(){
-		return stackContent[N--];
+		String item = stackContent[N];
+		stackContent[N] = null;
+		N--;
+		return item;
 	}
 	
 	

@@ -14,5 +14,5 @@ This is my algorithm's home
 3. Stack: 
    * Reverse input 
    * Dijkstra’s Two-Stack Algorithm for Expression Evaluation
-   * FixedCapacityStackOfStrings
-   * FixedCapacityStack, generic stack
+   * FixedCapacityStackOfStrings(avoid loitering)
+   * FixedCapacityStack, generic stack(avoid loitering)

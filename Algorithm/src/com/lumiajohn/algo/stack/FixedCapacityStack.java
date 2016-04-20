@@ -15,7 +15,10 @@ public class FixedCapacityStack<Item> {
 	}
 	
 	public Item pop(){
-		return stackContent[N--];
+		Item item = stackContent[N];
+		stackContent[N] = null;
+		N--;
+		return item;
 	}
 	
 	
