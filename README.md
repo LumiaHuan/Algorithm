@@ -15,3 +15,4 @@ This is my algorithm's home
    * Reverse input 
    * Dijkstra’s Two-Stack Algorithm for Expression Evaluation
    * FixedCapacityStackOfStrings
+   * FixedCapacityStack, generic stack

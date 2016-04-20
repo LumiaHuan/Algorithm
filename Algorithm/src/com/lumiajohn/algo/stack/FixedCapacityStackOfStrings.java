@@ -8,7 +8,7 @@ public class FixedCapacityStackOfStrings {
 		stackContent = new String[capacity];
 	}
 	public int size(){
-		return N;
+		return N+1;
 		
 	}
 	public boolean isEmpty(){
