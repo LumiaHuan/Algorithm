@@ -11,8 +11,9 @@ This is my algorithm's home
 
 1. Bag: calculate mean and std
 2. Queue: return int array from file
-3. Stack: 
+3. Stack(implemented by Array): 
    * Reverse input 
    * Dijkstra’s Two-Stack Algorithm for Expression Evaluation
    * FixedCapacityStackOfStrings(avoid loitering)
    * FixedCapacityStack, generic stack(avoid loitering)
+   * ResizedCapacityStack, foreach operation
