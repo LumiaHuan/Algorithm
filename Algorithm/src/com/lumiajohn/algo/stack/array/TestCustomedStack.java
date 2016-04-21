@@ -1,4 +1,4 @@
-package com.lumiajohn.algo.stack;
+package com.lumiajohn.algo.stack.array;
 
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;

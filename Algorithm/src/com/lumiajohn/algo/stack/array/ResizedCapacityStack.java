@@ -1,4 +1,4 @@
-package com.lumiajohn.algo.stack;
+package com.lumiajohn.algo.stack.array;
 
 import java.util.Iterator;
 

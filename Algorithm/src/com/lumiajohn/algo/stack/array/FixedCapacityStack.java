@@ -1,4 +1,4 @@
-package com.lumiajohn.algo.stack;
+package com.lumiajohn.algo.stack.array;
 
 public class FixedCapacityStack<Item> {
 	private int N;
