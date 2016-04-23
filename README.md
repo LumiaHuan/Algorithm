@@ -25,3 +25,4 @@ This is my algorithm's home
    * Parentheses: uses a stack to determine whether string's parentheses are properly balanced.
    * Prints the binary representation of number N 
    * add peek()
+   * InfixToPostfix:converts an arithmetic expression from in- ﬁx to postﬁx.
