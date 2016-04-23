@@ -1,6 +1,8 @@
 package com.lumiajohn.algo.stack.linklist;
 
-public class LinkedStack<Item> {
+import java.util.Iterator;
+
+public class LinkedStack<Item> implements Iterable<Item>{
 	private int N;
 	private Node first;
 	private class Node{
@@ -25,5 +27,26 @@ public class LinkedStack<Item> {
 		first = first.next;
 		N--;
 		return item;
+	}
+	@Override
+	public Iterator<Item> iterator() {
+		// TODO Auto-generated method stub
+		return new LinkedStackIterator();
+	}
+	
+	private class LinkedStackIterator implements Iterator<Item>{
+		private Node currentNode = first;
+		@Override
+		public boolean hasNext() {
+			return currentNode != null;
+		}
+
+		@Override
+		public Item next() {
+			Item item = currentNode.item;
+			currentNode = currentNode.next;
+			return item;
+		}
+		
 	}
 }

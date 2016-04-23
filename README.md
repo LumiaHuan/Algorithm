@@ -17,4 +17,6 @@ This is my algorithm's home
    * FixedCapacityStackOfStrings(avoid loitering)
    * FixedCapacityStack, generic stack(avoid loitering)
    * ResizedCapacityStack, foreach operation
-4. Stack(implemented by link list)
+4. Stack(implemented by link list):
+   * Parentheses: uses a stack to determine whether string's parentheses are properly balanced.
+   * Prints the binary representation of number N 

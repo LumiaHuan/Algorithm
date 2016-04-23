@@ -12,8 +12,10 @@ public class FixedCapacityStackOfStrings {
 		
 	}
 	public boolean isEmpty(){
-		
 		return N == -1;
+	}
+	public boolean isFull(){
+		return N == stackContent.length-1;
 	}
 	public void push(String item){
 		stackContent[++N] = item;
