@@ -22,6 +22,9 @@ public class LinkedStack<Item> implements Iterable<Item>{
 		first = inserted;
 		N++;
 	}
+	public Item peek(){
+		return first.item;
+	}
 	public Item pop(){
 		Item item = first.item;
 		first = first.next;

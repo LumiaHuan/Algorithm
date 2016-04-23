@@ -31,6 +31,9 @@ public class ResizedCapacityStack<Item> implements Iterable<Item>{
 		}
 		contentStack[++N] = item;
 	}
+	public Item peek(){
+		return contentStack[N];
+	}
 	public Item pop(){
 		Item item = contentStack[N];
 		contentStack[N--] = null;

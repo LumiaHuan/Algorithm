@@ -5,8 +5,8 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class TestCustomedStack {
 	public static void main(String[] args) {
-		testFixedCapacityStackOfStrings();
-//		testFixedCapacityStack();
+//		testFixedCapacityStackOfStrings();
+		testFixedCapacityStack();
 //		testResizedCapacityStack();
 		
 	}
@@ -33,6 +33,7 @@ public class TestCustomedStack {
 			String item = StdIn.readString();
 			if(!"-".equals(item)){
 				s.push(item);
+				StdOut.print(s.peek());
 			}else if(!s.isEmpty()){
 				StdOut.print(s.pop()+" ");
 			}

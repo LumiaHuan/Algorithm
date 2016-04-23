@@ -18,7 +18,10 @@ This is my algorithm's home
    * Dijkstra’s Two-Stack Algorithm for Expression Evaluation
    * FixedCapacityStackOfStrings(avoid loitering)
    * FixedCapacityStack, generic stack(avoid loitering)
+     * add peek()
    * ResizedCapacityStack, foreach operation
+     * add peek()
 5. Stack(implemented by link list):
    * Parentheses: uses a stack to determine whether string's parentheses are properly balanced.
    * Prints the binary representation of number N 
+   * add peek()

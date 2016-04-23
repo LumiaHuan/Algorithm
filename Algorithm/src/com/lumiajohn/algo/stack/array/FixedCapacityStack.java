@@ -25,6 +25,10 @@ public class FixedCapacityStack<Item> {
 		stackContent[++N] = item;
 	}
 
+	public Item peek(){
+		return stackContent[N];
+	}
+	
 	public Item pop() {
 		Item item = stackContent[N];
 		stackContent[N] = null;
