@@ -10,13 +10,14 @@ This is my algorithm's home
 ## Bag, Queue, Stack
 
 1. Bag: calculate mean and std
-2. Queue(implemented by link list)
-3. Stack(implemented by Array): 
+2. Bag (implemented by link list)
+3. Queue(implemented by link list)
+4. Stack(implemented by Array): 
    * Reverse input 
    * Dijkstra’s Two-Stack Algorithm for Expression Evaluation
    * FixedCapacityStackOfStrings(avoid loitering)
    * FixedCapacityStack, generic stack(avoid loitering)
    * ResizedCapacityStack, foreach operation
-4. Stack(implemented by link list):
+5. Stack(implemented by link list):
    * Parentheses: uses a stack to determine whether string's parentheses are properly balanced.
    * Prints the binary representation of number N 
