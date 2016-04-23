@@ -1,6 +1,8 @@
 package com.lumiajohn.algo.queue.linklist;
 
-public class LinkedQueue<Item> {
+import java.util.Iterator;
+
+public class LinkedQueue<Item> implements Iterable<Item>{
 	private class Node{
 		Item item;
 		Node next;
@@ -39,5 +41,23 @@ public class LinkedQueue<Item> {
 		}
 		N--;
 		return item;
+	}
+	@Override
+	public Iterator<Item> iterator() {
+		return new LinkedQueueIterator();
+	}
+	private class LinkedQueueIterator implements Iterator<Item>{
+		private Node currentNode = head;
+		@Override
+		public boolean hasNext() {
+			return currentNode!=null;
+		}
+
+		@Override
+		public Item next() {
+			Item item = currentNode.item;
+			currentNode = currentNode.next;
+			return item;
+		}
 	}
 }
