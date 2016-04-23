@@ -12,6 +12,7 @@ This is my algorithm's home
 1. Bag: calculate mean and std
 2. Bag (implemented by link list)
 3. Queue(implemented by link list)
+   * ReverseQueue(by a stack)
 4. Stack(implemented by Array): 
    * Reverse input 
    * Dijkstra’s Two-Stack Algorithm for Expression Evaluation
