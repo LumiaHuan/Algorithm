@@ -52,4 +52,12 @@ public class LinkedStack<Item> implements Iterable<Item>{
 		}
 		
 	}
+	
+	public static <Item> LinkedStack<Item> copy(LinkedStack<Item> copied){
+		LinkedStack<Item> ret = new LinkedStack<>();
+		for(Item item : copied){
+			ret.push(item);
+		}
+		return ret;
+	}
 }

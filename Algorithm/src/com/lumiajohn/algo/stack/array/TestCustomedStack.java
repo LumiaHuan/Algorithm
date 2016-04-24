@@ -6,8 +6,8 @@ import edu.princeton.cs.algs4.StdOut;
 public class TestCustomedStack {
 	public static void main(String[] args) {
 //		testFixedCapacityStackOfStrings();
-		testFixedCapacityStack();
-//		testResizedCapacityStack();
+//		testFixedCapacityStack();
+		testResizedCapacityStack();
 		
 	}
 
@@ -22,7 +22,8 @@ public class TestCustomedStack {
 			}
 		}
 		StdOut.println("("+s.size()+" left on stack)");
-		for(String each : s){
+		ResizedCapacityStack<String> sCp = ResizedCapacityStack.copy(s);
+		for(String each : sCp){
 			StdOut.print(each+" ");
 		}		
 	}

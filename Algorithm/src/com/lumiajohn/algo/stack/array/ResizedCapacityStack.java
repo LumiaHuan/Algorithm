@@ -2,6 +2,8 @@ package com.lumiajohn.algo.stack.array;
 
 import java.util.Iterator;
 
+import com.lumiajohn.algo.stack.linklist.LinkedStack;
+
 public class ResizedCapacityStack<Item> implements Iterable<Item>{
 	private int N;
 	private Item[] contentStack;
@@ -58,6 +60,12 @@ public class ResizedCapacityStack<Item> implements Iterable<Item>{
 		public Item next() {
 			return contentStack[i--];
 		}
-		
+	}
+	public static <Item> ResizedCapacityStack<Item> copy(ResizedCapacityStack<Item> copied){
+		ResizedCapacityStack<Item> ret = new ResizedCapacityStack<>(copied.size());
+		for(Item item : copied){
+			ret.push(item);
+		}
+		return ret;
 	}
 }

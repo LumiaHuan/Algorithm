@@ -21,9 +21,11 @@ This is my algorithm's home
      * add peek()
    * ResizedCapacityStack, foreach operation
      * add peek()
+     * add copy()
 5. Stack(implemented by link list):
    * Parentheses: uses a stack to determine whether string's parentheses are properly balanced.
    * Prints the binary representation of number N 
    * add peek()
+   * add copy()
    * InfixToPostfix:converts an arithmetic expression from in- ﬁx to postﬁx.
    * EvaluatePostfix:calculate the result of postfix

@@ -10,11 +10,15 @@ public class TestLinkedStack {
 			String item = StdIn.readString();
 			if(!"-".equals(item)){
 				s.push(item);
-				StdOut.print(s.peek());
 			}else if(!s.isEmpty()){
 				StdOut.print(s.pop()+" ");
 			}
 		}
 		StdOut.println("("+s.size()+" left on stack)");
+		LinkedStack<String> sCp = LinkedStack.copy(s);
+		for(String str : sCp){
+			StdOut.print(str+" ");
+		}
+		
 	}
 }
