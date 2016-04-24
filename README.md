@@ -13,7 +13,9 @@ This is my algorithm's home
 2. Bag (implemented by link list)
 3. Queue(implemented by link list)
    * ReverseQueue(by a stack)
-4. Stack(implemented by Array): 
+4. Queue(implemented by array)
+   * ResizingArrayQueue
+5. Stack(implemented by Array): 
    * Reverse input 
    * Dijkstra’s Two-Stack Algorithm for Expression Evaluation
    * FixedCapacityStackOfStrings(avoid loitering)
@@ -22,7 +24,7 @@ This is my algorithm's home
    * ResizedCapacityStack, foreach operation
      * add peek()
      * add copy()
-5. Stack(implemented by link list):
+6. Stack(implemented by link list):
    * Parentheses: uses a stack to determine whether string's parentheses are properly balanced.
    * Prints the binary representation of number N 
    * add peek()
