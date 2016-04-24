@@ -26,3 +26,4 @@ This is my algorithm's home
    * Prints the binary representation of number N 
    * add peek()
    * InfixToPostfix:converts an arithmetic expression from in- ﬁx to postﬁx.
+   * EvaluatePostfix:calculate the result of postfix
