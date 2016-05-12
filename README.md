@@ -31,3 +31,10 @@ This is my algorithm's home
    * add copy()
    * InfixToPostfix:converts an arithmetic expression from in- ﬁx to postﬁx.
    * EvaluatePostfix:calculate the result of postfix
+
+## LinkedList
+
+* boolean isEmpty()
+* insert(T data): insert data into list's tail
+* insert(T data, int index): insert data into the position after index, -1 to insert into head.
+* T delete(): delete the last node and return the data.
