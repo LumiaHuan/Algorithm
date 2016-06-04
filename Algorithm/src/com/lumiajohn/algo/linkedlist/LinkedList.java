@@ -1,7 +1,7 @@
 package com.lumiajohn.algo.linkedlist;
 
 public class LinkedList<T> {
-	private class Node{
+	public class Node{
 		T data;
 		Node next;
 		Node(){}
@@ -74,6 +74,70 @@ public class LinkedList<T> {
 			pre.next = null;
 		}
 		return ret;
+	}
+	
+	public T delete(int index){
+		if(isEmpty()){
+			return null;
+		}
+		if(index == 0){
+			T ret = head.data;
+			head = head.next;
+			return ret;
+		}
+		Node tmpHead = head;
+		for(int i = 0; i < index-1; i++){
+			tmpHead = tmpHead.next;
+		}
+		T ret = tmpHead.next.data;
+		tmpHead.next = tmpHead.next.next;
+		return ret;
+	}
+	
+	public boolean find(T key){
+		Node tmp = head;
+		while(tmp!=null){
+			if(tmp.data==key || tmp.data.equals(key)){
+				return true;
+			}
+			tmp = tmp.next;
+		}
+		return false;
+	}
+	
+	public void removeAfter(Node node){
+		if(node == null || isEmpty()){
+			return;
+		}
+		Node tmp = head;
+		while(tmp!=node){
+			tmp = tmp.next;
+		}
+		if(tmp == null){
+			return;
+		}
+		tmp.next = tmp.next.next;
+	}
+	public Node head(){return head;}
+	
+	public void insertAfter(Node node, Node inserted){
+		if(node == null || inserted==null || isEmpty()){
+			return;
+		}
+		Node tmp = head;
+		while(tmp != node){
+			tmp = tmp.next;
+		}
+		if(tmp==null){return;}
+		inserted.next = tmp.next;
+		tmp.next = inserted;
+	}
+	
+	public int max(Node head){
+		if(head == null || isEmpty()){
+			return 0;
+		}
+		return Math.max((int) head.data, max(head.next));
 	}
 	
 	@Override

@@ -38,3 +38,14 @@ This is my algorithm's home
 * insert(T data): insert data into list's tail
 * insert(T data, int index): insert data into the position after index, -1 to insert into head.
 * T delete(): delete the last node and return the data.
+* T delete(int k): delete the kth node.
+* boolean find(T key): find some node has key
+* int max(Node head): find the max value in link list( only has positive value).
+
+## CircularLinkedListQueue
+
+Queue implementation that uses a circular linked list, which is the same as a linked list except that no links are null and the value of last.next is first when- ever the list is not empty.
+
+* boolean isEmpty()
+* void enQueue(T data)
+* T deQueue()
